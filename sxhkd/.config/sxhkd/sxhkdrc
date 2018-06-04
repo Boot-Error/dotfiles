@@ -1,0 +1,29 @@
+XF86Audio{Prev,Next}
+	mpc -q {prev,next}
+
+XF86MonBrightness{Up,Down}
+	xbacklight {+,-}10
+
+XF86Audio{Raise,Lower}Volume
+	amixer set Master 10{+,-}
+
+XF86AudioMute
+	amixer set Master toggle
+
+XF86AudioPlay
+	mpc toggle
+
+super + c
+	rofi -font "ypn envypn 12" -show run
+
+super + w
+	rofi -show window
+
+super + Return
+	alacritty
+
+super + x
+	9menu.sh
+
+Print
+	screenclip.sh
