@@ -14,7 +14,7 @@ XF86AudioPlay
 	mpc toggle
 
 super + c
-	rofi -font "ypn envypn 12" -show run
+	rofi -font "ypn envypn 12" -show drun
 
 super + w
 	rofi -show window
@@ -22,8 +22,5 @@ super + w
 super + Return
 	alacritty
 
-super + x
-	9menu.sh
-
 Print
-	screenclip.sh
+	flameshot gui -p ~/Pictures/Screenshots/

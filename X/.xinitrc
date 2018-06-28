@@ -5,8 +5,8 @@ compton -b
 dunst -conf ~/.config/dunst/dunstrc &
 feh --bg-scale wallpaper.jpg
 sxhkd &
-exec i3
-# exec 2bwm
+# exec i3
+exec 2bwm
 # dwmstatus &
 # exec dwm
 # exec bspwm

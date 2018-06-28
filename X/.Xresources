@@ -10,7 +10,7 @@ URxrvt.termName: rxvt-unicode
 URxvt.scrollBar: false
 URxvt.background: gray
 URxvt.foreground: gray
-URxvt.font: ypn envypn:style=Regular
+URxvt.font: xtf:ypn envypn:pixelsize=13:style=Regular
 
 rofi.font: ypn envypn 12
 
