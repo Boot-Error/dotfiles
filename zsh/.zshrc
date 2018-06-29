@@ -20,4 +20,6 @@ export ZSHCONF=$HOME/.zsh
 for conf in $(ls $ZSHCONF/*.zsh); do
 	source $conf
 done
+unset conf
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

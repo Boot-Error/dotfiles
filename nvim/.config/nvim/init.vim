@@ -33,7 +33,7 @@ au FileType rust nmap <leader>gd <Plug>(rust-doc)
 set tabstop=4
 set shiftwidth=4
 let mapleader="`"
-colorscheme base16-monokai 
+colorscheme industry 
 colorscheme gruvbox
 
 " keymaps
