@@ -1,4 +1,8 @@
-cd /mnt/home/booterror/Pictures
 search 160821
 copy
 
+open_with nvim
+delete 
+rename VighneshSK_resume.pdf
+cd /mnt/home/booterror/Pictures
+open_with vim

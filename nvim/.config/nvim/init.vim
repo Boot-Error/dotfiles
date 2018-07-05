@@ -1,7 +1,6 @@
 
 call plug#begin('~/.nvim/plugged')
 
-" Plug 'junegunn/fzf', { 'dir'" '~/.fzf', 'do': './install -all' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'rust-lang/rust.vim'
@@ -13,12 +12,11 @@ Plug 'majutsushi/tagbar'
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'posva/vim-vue'
+Plug 'tomtom/tcomment_vim'
 
 call plug#end()
 
 set hidden
-
-" let base16colorspace=256
 
 let g:racer_cmd = "racer"
 let g:racer_experimental_completer = 1
@@ -40,7 +38,7 @@ colorscheme gruvbox
 
 imap <c-u> <esc>vbUwi
 
-nnoremap <C-R> :set number! relativenumber!<cr>
+nnoremap <leader>r :set number! relativenumber!<cr>
 nnoremap <CR> :nohlsearch<cr>
 nnoremap <C-k> :TagbarToggle<cr>
 nnoremap <leader>b :NERDTreeToggle<cr>

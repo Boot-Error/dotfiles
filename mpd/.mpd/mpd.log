@@ -8,3 +8,15 @@ Jun 28 18:24 : exception: bind to '0.0.0.0:8000' failed (continuing anyway, beca
 Jun 29 10:28 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Jun 29 10:28 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Jun 29 10:28 : exception: bind to '0.0.0.0:8000' failed (continuing anyway, because binding to '[::]:8000' succeeded): Failed to bind socket: Address already in use
+Jun 30 08:18 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 30 08:18 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 30 08:18 : exception: bind to '0.0.0.0:8000' failed (continuing anyway, because binding to '[::]:8000' succeeded): Failed to bind socket: Address already in use
+Jul 01 12:05 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 01 12:05 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 01 12:05 : exception: bind to '0.0.0.0:8000' failed (continuing anyway, because binding to '[::]:8000' succeeded): Failed to bind socket: Address already in use
+Jul 03 16:25 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 03 16:25 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 03 16:25 : exception: bind to '0.0.0.0:8000' failed (continuing anyway, because binding to '[::]:8000' succeeded): Failed to bind socket: Address already in use
+Jul 04 11:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 04 11:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 04 11:43 : exception: bind to '0.0.0.0:8000' failed (continuing anyway, because binding to '[::]:8000' succeeded): Failed to bind socket: Address already in use
