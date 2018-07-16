@@ -1,8 +1,16 @@
 search 160821
 copy
-
-open_with nvim
 delete 
 rename VighneshSK_resume.pdf
 cd /mnt/home/booterror/Pictures
+cd /run/media/booterror/da6a5972-0296-4ac0-b976-37616901ec75/
+open_with nvim
+cd /mnt/home/booterror
+opeqqn_with 
+open_with e
+move
+paste
 open_with vim
+
+rm
+delete

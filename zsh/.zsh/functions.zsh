@@ -22,3 +22,8 @@ function edots() {
 	dotf=$(find $HOME/dotfiles -path $HOME/dotfiles/.git -prune -o -type f | cut -c26- | fzf)
 	[[ -z ${dotf} ]] && echo || $EDITOR $HOME/dotfiles/$dotf
 }
+
+# function to access cheat.sh
+function cheat() {
+	curl cheat.sh/$1
+}
