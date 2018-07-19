@@ -2,6 +2,7 @@
 
 function extract() {
 	print "Work in Progress!\n"
+	print "Don't need this anymore\n"
 }
 
 # https://www.reddit.com/r/linux/comments/8vzr3y/whats_the_most_frequent_terminal_command_you_use/
@@ -26,4 +27,14 @@ function edots() {
 # function to access cheat.sh
 function cheat() {
 	curl cheat.sh/$1
+}
+
+
+# crazy ones
+function cat() {
+	realcat='/usr/bin/cat'
+	case "$(shuf -e -n1 a b c)" in
+		'a') echo meow ;;
+		*) $realcat $@ ;;
+esac
 }

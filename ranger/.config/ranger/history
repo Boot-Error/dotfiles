@@ -10,7 +10,9 @@ opeqqn_with
 open_with e
 move
 paste
-open_with vim
 
 rm
 delete
+open_ 
+open_with 
+open_with vim

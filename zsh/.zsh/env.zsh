@@ -4,6 +4,7 @@
 export PATH=$PATH:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/dotfiles/scripts
 
 export EDITOR=vim
+export TERMINAL=alacritty
 
 export DEVEL=$HOME/Development
 export CONTRDEV=$DEVEL/Contributing

@@ -24,5 +24,5 @@ alias gcm="git commit -am"
 alias gpom="git push -u origin master"
 
 # others
-alias ftimest="date -Iseconds"
-alias chkproc="ps aux | grep "
+alias tst="date -Iseconds"
+alias cproc="ps aux | grep "
