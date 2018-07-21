@@ -13,6 +13,7 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'posva/vim-vue'
 Plug 'tomtom/tcomment_vim'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()
 
@@ -31,6 +32,9 @@ au FileType rust nmap <leader>gd <Plug>(rust-doc)
 set tabstop=4
 set shiftwidth=4
 let mapleader="`"
+set splitbelow
+set splitright
+
 colorscheme industry 
 colorscheme gruvbox
 
@@ -43,8 +47,14 @@ nnoremap <CR> :nohlsearch<cr>
 nnoremap <C-k> :TagbarToggle<cr>
 nnoremap <leader>b :NERDTreeToggle<cr>
 
+nnoremap <leader>g :Goyo<cr>
+
+nnoremap <leader>t :20sp term:///bin/zsh<cr>i
+nnoremap <leader>T :70vsp term:///bin/zsh<cr>i
+
 tnoremap <Esc> <C-\><C-n>
-tnoremap <C-w>h <C-\><C-N><C-w>h
-tnoremap <C-w>j <C-\><C-N><C-w>j
-tnoremap <C-w>k <C-\><C-N><C-w>k
-tnoremap <C-w>l <C-\><C-N><C-w>l
+tnoremap <C-w>h <Esc><C-\><C-N><C-w>h
+tnoremap <C-w>j <Esc><C-\><C-N><C-w>j
+tnoremap <C-w>k <Esc><C-\><C-N><C-w>k
+tnoremap <C-w>l <Esc><C-\><C-N><C-w>l
+tnoremap <C-Esc> <Esc><C-\><C-N>:q<cr>
