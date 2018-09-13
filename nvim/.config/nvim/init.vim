@@ -14,20 +14,13 @@ Plug 'vim-airline/vim-airline'
 Plug 'posva/vim-vue'
 Plug 'tomtom/tcomment_vim'
 Plug 'junegunn/goyo.vim'
+Plug 'vim-latex/vim-latex'
 
 call plug#end()
 
 set hidden
 
-let g:racer_cmd = "racer"
-let g:racer_experimental_completer = 1
-
-au FileType rust nmap gd <Plug>(rust-def)
-au FileType rust nmap gs <Plug>(rust-def-split)
-au FileType rust nmap gx <Plug>(rust-def-vertical)
-au FileType rust nmap <leader>gd <Plug>(rust-doc)
-
-" some settings
+" personal settings
 
 set tabstop=4
 set shiftwidth=4
@@ -58,3 +51,18 @@ tnoremap <C-w>j <Esc><C-\><C-N><C-w>j
 tnoremap <C-w>k <Esc><C-\><C-N><C-w>k
 tnoremap <C-w>l <Esc><C-\><C-N><C-w>l
 tnoremap <C-Esc> <Esc><C-\><C-N>:q<cr>
+
+" rust settings
+
+let g:racer_cmd = "racer"
+let g:racer_experimental_completer = 1
+
+au FileType rust nmap gd <Plug>(rust-def)
+au FileType rust nmap gs <Plug>(rust-def-split)
+au FileType rust nmap gx <Plug>(rust-def-vertical)
+au FileType rust nmap <leader>gd <Plug>(rust-doc)
+
+" latex settings
+let g:livepreview_previewer = 'zathura'
+let g:tex_flavor = 'pdflatex'
+let g:Tex_BibtexFlavor = 'biber'

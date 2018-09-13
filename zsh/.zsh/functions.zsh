@@ -13,7 +13,7 @@ function cmdstat() {
 		| column -c3 -s " " -t \
 		| sort -nr \
 		| nl \
-		| head -n5 \
+		| head -n10 \
 }
 
 # function to edit my dotfiles
@@ -29,6 +29,14 @@ function cheat() {
 	curl cheat.sh/$1
 }
 
+function disp4ever() {
+	while true; do
+		eval $@
+		sleep 1
+		clear
+	done
+}
+
 
 # crazy ones
 function cat() {
@@ -36,5 +44,10 @@ function cat() {
 	case "$(shuf -e -n1 a b c)" in
 		'a') echo meow ;;
 		*) $realcat $@ ;;
-esac
+	esac
 }
+
+function saybig() {
+	figlet "$@" 
+}
+

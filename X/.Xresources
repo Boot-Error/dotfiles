@@ -25,36 +25,19 @@ twobwm.fixed_unkill_color: #f2f23c
 twobwm.inverted_colors: false
 twobwm.enable_compton: true
 
-! base00: "282828" 
-! base01: "3c3836" 
-! base02: "504945" 
-! base03: "665c54" 
-! base04: "bdae93" 
-! base05: "d5c4a1" 
-! base06: "ebdbb2" 
-! base07: "fbf1c7" 
-! base08: "fb4934" 
-! base09: "fe8019" 
-! base0A: "fabd2f" 
-! base0B: "b8bb26" 
-! base0C: "8ec07c"
-! base0D: "83a598" 
-! base0E: "d3869b" 
-! base0F: "d65d0e" 
-
-color0:  #282828
-color1:  #3c3836
-color2:  #504945
-color3:  #665c54
-color4:  #bdae93
-color5:  #d5c4a1
-color6:  #ebdbb2
-color7:  #fbf1c7
-color8:  #fb4934
-color9:  #fe8019
-color10: #fabd2f
-color11: #b8bb26
-color12: #8ec07c
-color13: #83a598
-color14: #d3869b
-color15: #d65d0e
+color0:  #282828 
+color1:  #3c3836 
+color2:  #504945 
+color3:  #665c54 
+color4:  #bdae93 
+color5:  #d5c4a1 
+color6:  #ebdbb2 
+color7:  #fbf1c7 
+color8:  #fb4934 
+color9:  #fe8019 
+color10: #fabd2f 
+color11: #b8bb26 
+color12: #8ec07c 
+color13: #83a598 
+color14: #d3869b 
+color15: #d65d0e 

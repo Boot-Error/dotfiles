@@ -3,8 +3,8 @@ audio_device_state:1:my_fifo
 audio_device_state:1:Alsa
 audio_device_state:1:my http stream
 state: pause
-current: 8
-time: 16.114000
+current: 0
+time: 151.296000
 random: 0
 repeat: 1
 single: 0
@@ -13,15 +13,5 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:postmalone_bestoff/Post Malone - Candy Paint (The Fate of the Furious - The Album) [OFFICIAL AUDIO] - (229s) [NA].mp3
-1:postmalone_bestoff/Post Malone - White Iverson - (284s) [NA].mp3
-2:juice_WRLD/Juice WRLD - 'Legends' (Official Audio) - (191s) [NA].mp3
-3:postmalone_bestoff/Post Malone - Psycho ft. Ty Dolla $ign - (237s) [NA].mp3
-4:postmalone_bestoff/Post Malone - Paranoid (Lyrics) - (196s) [NA].mp3
-5:postmalone_bestoff/Post Malone - I Fall Apart (Live From The Bud Light x Post Malone Dive Bar Tour Nashville) - (297s) [NA].mp3
-6:Billboard Hot 100 Singles Chart (03.03.2018) Mp3 (320kbps) [Hunter]/Billboard Hot 100 Singles Chart (03.03.2018)/06. Post Malone (feat. 21 Savage) - rockstar.mp3
-7:Billboard Hot 100 Singles Chart (03.03.2018) Mp3 (320kbps) [Hunter]/Billboard Hot 100 Singles Chart (03.03.2018)/14. G-Eazy - Him & I.mp3
-8:Billboard Hot 100 Singles Chart (03.03.2018) Mp3 (320kbps) [Hunter]/Billboard Hot 100 Singles Chart (03.03.2018)/28. Camila Cabello - Never Be the Same.mp3
-9:Billboard Hot 100 Singles Chart (03.03.2018) Mp3 (320kbps) [Hunter]/Billboard Hot 100 Singles Chart (03.03.2018)/27. G-Eazy - No Limit.mp3
-10:juice_WRLD/Juice WRLD 'All Girls Are The Same' (Official Audio) - (170s) [NA].mp3
+0:juice_WRLD/Juice WRLD - Lean With Me (Official Audio) - (176s) [NA].mp3
 playlist_end

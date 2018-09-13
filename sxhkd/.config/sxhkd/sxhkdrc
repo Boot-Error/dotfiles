@@ -19,8 +19,11 @@ super + c
 super + w
 	rofi -show window
 
+super + x
+	9menu.sh
+
 super + Return
-	alacritty
+	termite
 
 Print
 	flameshot gui -p ~/Pictures/Screenshots/

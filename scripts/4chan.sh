@@ -14,7 +14,7 @@ case $FUNCTION in
 		[ -z "${thread_no}" ] \
 			&& echo Found nothing \
 			|| for tno in $(echo $thread_no | tr ' ' '\n' ); do 
-				chromium --incognito "https://boards.4chan.org/${BOARD}/thread/${tno}";
+			firefox "https://boards.4chan.org/${BOARD}/thread/${tno}";
 			done ;;
 	*) echo Command not found ;;
 esac
