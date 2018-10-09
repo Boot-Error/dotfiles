@@ -51,3 +51,7 @@ function saybig() {
 	figlet "$@" 
 }
 
+# control vlc from socket interface
+function vlctl() {
+	echo $@ | nc localhost 51234 > /dev/null
+}

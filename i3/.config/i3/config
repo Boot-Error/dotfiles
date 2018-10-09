@@ -19,16 +19,21 @@ font pango:M+ 1m 8
 floating_modifier $mod
 
 # various controls
-bindsym XF86MonBrightnessUp		exec xbacklight -inc +10%
-bindsym XF86MonBrightnessDown	exec xbacklight -inc -10%
+bindsym XF86MonBrightnessUp		exec light -A 10
+bindsym XF86MonBrightnessDown	exec light -U 10
 bindsym XF86AudioRaiseVolume	exec amixer set Master playback 5%+
 bindsym XF86AudioLowerVolume	exec amixer set Master playback 5%-
-bindsym XF86AudioPlay			exec mpc toggle
+bindsym XF86AudioPlay			exec echo pause | nc localhost 51234 > /dev/null 
+bindsym XF86AudioPrev			exec echo prev | nc localhost 51234 > /dev/null 
+bindsym XF86AudioNext			exec echo next | nc localhost 51234 > /dev/null 
 
-bindsym $mod+Return exec --no-startup-id gnome-terminal
+bindsym Print					exec flameshot gui -p ~/Pictures/Screenshots/
 
-bindsym $mod+c exec --no-startup-id rofi -show drun
-bindsym $mod+w exec --no-startup-id rofi -show window
+bindsym $mod+Return 			exec --no-startup-id gnome-terminal
+
+bindsym $mod+c 					exec --no-startup-id rofi -show drun
+bindsym $mod+w 					exec --no-startup-id rofi -show window
+bindsym $mod+x 					exec --no-startup-id i3lock -i ~/wallpaper.jpg 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -157,4 +162,5 @@ for_window [class="Sxiv"] floating enable
 for_window [class="Firefox"] move to workspace 2
 for_window [class="TelegramDesktop"] floating enable
 for_window [class="Pavucontrol"] floating enable
+for_window [class="copyq"] floating enable
 

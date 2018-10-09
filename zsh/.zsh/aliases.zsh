@@ -19,6 +19,7 @@ alias mkdir="mkdir -pv"
 
 # git aliases
 alias gcl="git clone"
+alias gstat="git status"
 alias gad="git add ."
 alias gcm="git commit -am"
 alias gpom="git push -u origin master"

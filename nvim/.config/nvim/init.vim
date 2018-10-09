@@ -15,6 +15,7 @@ Plug 'posva/vim-vue'
 Plug 'tomtom/tcomment_vim'
 Plug 'junegunn/goyo.vim'
 Plug 'vim-latex/vim-latex'
+Plug 'tpope/vim-abolish'
 
 call plug#end()
 

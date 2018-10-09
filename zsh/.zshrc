@@ -20,4 +20,7 @@ for conf in $(ls $ZSHCONF/*.zsh); do
 done
 unset conf
 
+# lazily fixing some stupid persmission with my zsh not cd into home directory
+# cd
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
