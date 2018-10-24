@@ -1,6 +1,8 @@
 #!/bin/bash
 
 xrandr --output eDP-1 --mode 1920x1080 --dpi 108
+xinput set-prop 13 283 1
+
 feh --bg-scale /home/booterror/wallpaper.jpg
 nm-applet &
 dunst &

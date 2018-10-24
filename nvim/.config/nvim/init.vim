@@ -14,7 +14,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'posva/vim-vue'
 Plug 'tomtom/tcomment_vim'
 Plug 'junegunn/goyo.vim'
-Plug 'vim-latex/vim-latex'
+" Plug 'vim-latex/vim-latex'
 Plug 'tpope/vim-abolish'
 
 call plug#end()
@@ -44,7 +44,7 @@ nnoremap <leader>b :NERDTreeToggle<cr>
 nnoremap <leader>g :Goyo<cr>
 
 nnoremap <leader>t :20sp term:///bin/zsh<cr>i
-nnoremap <leader>T :70vsp term:///bin/zsh<cr>i
+nnoremap <leader>T :vsp term:///bin/zsh<cr>i
 
 tnoremap <Esc> <C-\><C-n>
 tnoremap <C-w>h <Esc><C-\><C-N><C-w>h
@@ -64,6 +64,6 @@ au FileType rust nmap gx <Plug>(rust-def-vertical)
 au FileType rust nmap <leader>gd <Plug>(rust-doc)
 
 " latex settings
-let g:livepreview_previewer = 'zathura'
-let g:tex_flavor = 'pdflatex'
-let g:Tex_BibtexFlavor = 'biber'
+" let g:livepreview_previewer = 'zathura'
+" let g:tex_flavor = 'pdflatex'
+" let g:Tex_BibtexFlavor = 'biber'
