@@ -12,7 +12,7 @@ URxvt.background: gray
 URxvt.foreground: gray
 URxvt.font: xtf:ypn envypn:pixelsize=13:style=Regular
 
-rofi.font: ypn envypn 12
+rofi.font: xos4 Terminus 12
 
 twobwm.border_width: 3
 twobwm.outer_border: 2
