@@ -7,8 +7,11 @@ alias o="xdg-open"
 alias g="git"
 
 alias ls="ls --color=auto"
-alias ll="ls -lh"
-alias la="ls -lah"
+# alias ll="ls -lh"
+# alias la="ls -lah"
+
+alias ll="exa -lh"
+alias la="exa -lah"
 
 alias grep="grep --color=auto"
 

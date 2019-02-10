@@ -56,6 +56,7 @@ if [ "$preview_images" = "True" ]; then
         # image files (unless overriden as above), but might fail for
         # unsupported types.
         image/*)
+			show "$path"
             exit 7;;
         # Image preview for video, disabled by default.:
         video/*)

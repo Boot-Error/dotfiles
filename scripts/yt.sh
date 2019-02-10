@@ -2,7 +2,7 @@
 
 # WIP
 # `yt.sh YT_PLAYLIST_URL FOLDER_NAME`
-# todo: read from a file and use paralle to download in parallel
+# todo: read from a file and use parallel to download in parallel
 
 YT_URL=$1
 FOLDER=$2

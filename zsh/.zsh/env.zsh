@@ -1,10 +1,11 @@
 #!/usr/bin/zsh
 
 # path variable
+export GOPATH=$HOME/Development/.godevel
 export PATH=$PATH:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/dotfiles/scripts:$GOPATH/bin
 
 export EDITOR=nvim
-export TERMINAL=gnome-terminal
+export TERMINAL=alacritty
 
 export DEVEL=$HOME/Development
 export CONTRDEV=$DEVEL/Contributing

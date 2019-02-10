@@ -20,6 +20,10 @@ Plug 'tomtom/tcomment_vim'
 Plug 'junegunn/goyo.vim'
 Plug 'vim-latex/vim-latex'
 Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-fugitive'
+Plug 'tmhedberg/SimpylFold'
+Plug 'mileszs/ack.vim'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
@@ -41,13 +45,15 @@ filetype plugin on
 set hidden
 set tabstop=4
 set shiftwidth=4
-let mapleader="`"
+let mapleader=" " " leader is SPACE
 set splitbelow
 set splitright
 
 set background=dark
 colorscheme gruvbox
 " highlight Normal ctermbg=NONE
+
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 " }
 
@@ -56,12 +62,15 @@ colorscheme gruvbox
 nnoremap <leader>r :set number! relativenumber!<cr>
 nnoremap <CR> :nohlsearch<cr>
 nnoremap <C-k> :TagbarToggle<cr>
-nnoremap <leader>b :NERDTreeToggle<cr>
+
+nnoremap <leader>b :Buffers<cr>
+nnoremap <leader>f :Files<cr>
 
 nnoremap <leader>g :Goyo<cr>
 
 nnoremap <leader>t :20sp term:///bin/zsh<cr>i
 nnoremap <leader>T :vsp term:///bin/zsh<cr>i
+nnoremap <leader>nt :tabnew term:///bin/zsh<cr>i  
 
 tnoremap <Esc> <C-\><C-n>
 tnoremap <C-w>h <Esc><C-\><C-N><C-w>h
@@ -100,8 +109,8 @@ au FileType python setlocal
 	\ expandtab
 	\ autoindent
 	\ fileformat=unix
-	\ foldmethod=indent
-	\ foldlevel=0
+	" \ foldmethod=indent
+	" \ foldlevel=0
 	\ omnifunc=pythoncomplete#Complete
 
 " }

@@ -24,11 +24,26 @@ function edots() {
 	[[ -z ${dotf} ]] && echo || $EDITOR $HOME/dotfiles/$dotf
 }
 
+function goto() {
+	cd $(fd -t d | fzf --reverse --height 40%)
+}
+
+# function to search and kill a process
+function skill() {
+    local pids=$(
+      ps -f -u $USER | sed 1d | fzf --multi | tr -s [:blank:] | cut -d' ' -f3
+      )
+    if [ -n "$pids" ]; then
+        echo "$pids" | xargs kill -9 "$@"
+    fi
+}
+
 # function to access cheat.sh
 function cheat() {
 	curl cheat.sh/$1
 }
 
+# cheap console log xD
 function disp4ever() {
 	while true; do
 		eval $@

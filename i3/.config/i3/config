@@ -13,7 +13,7 @@ gaps outer 5
 
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 # font pango:DejaVu Sans Mono 8
-font pango:M+ 1m 8
+font pango:xos4 Terminus 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -23,13 +23,20 @@ bindsym XF86MonBrightnessUp		exec light -A 10
 bindsym XF86MonBrightnessDown	exec light -U 10
 bindsym XF86AudioRaiseVolume	exec amixer set Master playback 5%+
 bindsym XF86AudioLowerVolume	exec amixer set Master playback 5%-
-bindsym XF86AudioPlay			exec echo pause | nc localhost 51234 > /dev/null 
-bindsym XF86AudioPrev			exec echo prev | nc localhost 51234 > /dev/null 
-bindsym XF86AudioNext			exec echo next | nc localhost 51234 > /dev/null 
+
+# vlc player controls
+# bindsym XF86AudioPlay			    exec echo pause | nc localhost 51234 > /dev/null 
+# bindsym XF86AudioPrev			    exec echo prev | nc localhost 51234 > /dev/null 
+# bindsym XF86AudioNext			    exec echo next | nc localhost 51234 > /dev/null 
+
+# mpc music player controls
+bindsym XF86AudioPlay			exec mpc toggle
+bindsym XF86AudioPrev			exec mpc prev
+bindsym XF86AudioNext			exec mpc next
 
 bindsym Print					exec flameshot gui -p ~/Pictures/Screenshots/
 
-bindsym $mod+Return 			exec --no-startup-id st 
+bindsym $mod+Return				exec --no-startup-id alacritty
 
 bindsym $mod+c 					exec --no-startup-id rofi -show drun -theme gruvbox-soft -show-icons
 bindsym $mod+w 					exec --no-startup-id rofi -show window -theme gruvbox-soft -show-icons
@@ -163,4 +170,3 @@ for_window [class="Firefox"] move to workspace 2
 for_window [class="TelegramDesktop"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="copyq"] floating enable
-
