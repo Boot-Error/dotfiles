@@ -3,8 +3,8 @@ audio_device_state:1:my_fifo
 audio_device_state:1:Alsa
 audio_device_state:1:my http stream
 state: pause
-current: 5
-time: 114.058000
+current: 7
+time: 84.600000
 random: 0
 repeat: 1
 single: 0
@@ -13,14 +13,18 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:eminem_kamikaze.zip/Eminem - Kamikaze (2018)/03. Lucky You (feat. Joyner Lucas).mp3
-1:Billboard_Top_Songs_2017/A$AP ROCKY - F_kin' Problems ft. Drake, 2 Chainz, Kendrick Lamar - (233s) [1920x1080].mp3
-2:postmalone_bestoff/Post Malone - Candy Paint (The Fate of the Furious - The Album) [OFFICIAL AUDIO] - (229s) [NA].mp3
-3:Billboard_Top_Songs_2017/Kendrick Lamar - HUMBLE. - (184s) [1920x1080].mp3
-4:Billboard_Top_Songs_2017/Kygo, Selena Gomez - It Ain't Me - (241s) [1920x1080].mp3
-5:Billboard_Top_Songs_2017/OneRepublic - Counting Stars - (283s) [1920x1080].mp3
-6:Billboard_Top_Songs_2017/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO) - (233s) [1920x1080].mp3
-7:Billboard_Top_Songs_2017/Usher - DJ Got Us Fallin' In Love ft. Pitbull - (246s) [1920x1080].mp3
-8:juice_WRLD/Juice WRLD - Lean With Me (Official Audio) - (176s) [NA].mp3
-9:Billboard_Top_Songs_2017/Calvin Harris - This Is What You Came For (Official Video) ft. Rihanna - (239s) [1920x1080].mp3
+0:Twenty One Pilots - Trench (2018) 320 KBPS/01. Jumpsuit.mp3
+1:Twenty One Pilots - Trench (2018) 320 KBPS/02. Levitate.mp3
+2:Twenty One Pilots - Trench (2018) 320 KBPS/03. Morph.mp3
+3:Twenty One Pilots - Trench (2018) 320 KBPS/04. My Blood.mp3
+4:Twenty One Pilots - Trench (2018) 320 KBPS/05. Chlorine.mp3
+5:Twenty One Pilots - Trench (2018) 320 KBPS/06. Smithereens.mp3
+6:Twenty One Pilots - Trench (2018) 320 KBPS/07. Neon Gravestones.mp3
+7:Twenty One Pilots - Trench (2018) 320 KBPS/08. The Hype.mp3
+8:Twenty One Pilots - Trench (2018) 320 KBPS/09. Nico And The Niners.mp3
+9:Twenty One Pilots - Trench (2018) 320 KBPS/10. Cut My Lip.mp3
+10:Twenty One Pilots - Trench (2018) 320 KBPS/11. Bandito.mp3
+11:Twenty One Pilots - Trench (2018) 320 KBPS/12. Pet Cheetah.mp3
+12:Twenty One Pilots - Trench (2018) 320 KBPS/13. Legend.mp3
+13:Twenty One Pilots - Trench (2018) 320 KBPS/14. Leave the City.mp3
 playlist_end
