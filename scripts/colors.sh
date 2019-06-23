@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 for i in $(seq 41 49); do
 	for j in $(seq 31 39); do

@@ -24,6 +24,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tmhedberg/SimpylFold'
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-surround'
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 
@@ -121,6 +122,13 @@ au FileType python setlocal
 
 " JSON settings {
 
-au FileType json :%!jq<CR> 
+au FileType json :%!python -m json.tool %<CR> 
+
+" }
+
+" HTML/CSS settings {
+"
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
 
 " }

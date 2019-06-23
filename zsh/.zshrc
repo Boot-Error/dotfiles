@@ -24,3 +24,6 @@ unset conf
 # cd
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# added by travis gem
+[ -f /home/booterror/.travis/travis.sh ] && source /home/booterror/.travis/travis.sh

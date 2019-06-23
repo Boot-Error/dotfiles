@@ -13,3 +13,4 @@ export PERSNDEV=$DEVEL/Personal
 export EXPRNDEV=$DEVEL/Experiments
 
 export _JAVA_AWT_WM_NONREPARENTING=1
+export MOZ_USE_XINPUT2=1

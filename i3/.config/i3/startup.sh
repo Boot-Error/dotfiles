@@ -1,6 +1,6 @@
 #!/bin/bash
 
- xrandr --output eDP1 --mode 1920x1080 --dpi 108
+xrandr --output eDP1 --mode 1920x1080
 # xinput set-prop 13 283 1
 
 feh --bg-scale /home/booterror/wallpaper.jpg

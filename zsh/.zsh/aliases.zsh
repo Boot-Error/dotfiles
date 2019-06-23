@@ -2,16 +2,15 @@
 
 alias vim="nvim"
 alias e="vim"
-alias z="zathura"
+alias v="vim"
 alias o="xdg-open"
 alias g="git"
+alias t="task"
 
 alias ls="ls --color=auto"
-# alias ll="ls -lh"
-# alias la="ls -lah"
-
 alias ll="exa -lh"
 alias la="exa -lah"
+alias lt="exa -Tl"
 
 alias grep="grep --color=auto"
 

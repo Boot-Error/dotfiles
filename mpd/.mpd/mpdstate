@@ -3,8 +3,8 @@ audio_device_state:1:my_fifo
 audio_device_state:1:Alsa
 audio_device_state:1:my http stream
 state: pause
-current: 7
-time: 84.600000
+current: 0
+time: 183.599000
 random: 0
 repeat: 1
 single: 0
@@ -13,18 +13,5 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Twenty One Pilots - Trench (2018) 320 KBPS/01. Jumpsuit.mp3
-1:Twenty One Pilots - Trench (2018) 320 KBPS/02. Levitate.mp3
-2:Twenty One Pilots - Trench (2018) 320 KBPS/03. Morph.mp3
-3:Twenty One Pilots - Trench (2018) 320 KBPS/04. My Blood.mp3
-4:Twenty One Pilots - Trench (2018) 320 KBPS/05. Chlorine.mp3
-5:Twenty One Pilots - Trench (2018) 320 KBPS/06. Smithereens.mp3
-6:Twenty One Pilots - Trench (2018) 320 KBPS/07. Neon Gravestones.mp3
-7:Twenty One Pilots - Trench (2018) 320 KBPS/08. The Hype.mp3
-8:Twenty One Pilots - Trench (2018) 320 KBPS/09. Nico And The Niners.mp3
-9:Twenty One Pilots - Trench (2018) 320 KBPS/10. Cut My Lip.mp3
-10:Twenty One Pilots - Trench (2018) 320 KBPS/11. Bandito.mp3
-11:Twenty One Pilots - Trench (2018) 320 KBPS/12. Pet Cheetah.mp3
-12:Twenty One Pilots - Trench (2018) 320 KBPS/13. Legend.mp3
-13:Twenty One Pilots - Trench (2018) 320 KBPS/14. Leave the City.mp3
+0:Linkin Park/Linkin Park - In the End.mp3
 playlist_end

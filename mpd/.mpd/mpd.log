@@ -3212,3 +3212,193 @@ Feb 20 20:28 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/07. Ne
 Feb 20 20:29 : client: [36] opened from [::1]:35454
 Feb 20 20:29 : client: [36] closed
 Feb 21 19:34 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/08. The Hype.mp3"
+Feb 23 14:10 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 23 14:10 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 23 14:10 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 23 14:10 : exception: bind to '0.0.0.0:8000' failed (continuing anyway, because binding to '[::]:8000' succeeded): Failed to bind socket: Address already in use
+Feb 23 14:10 : client: [0] opened from [::1]:56986
+Feb 23 14:10 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 23 14:11 : client: [0] closed
+Feb 23 14:12 : client: [1] opened from [::1]:58140
+Feb 23 14:12 : client: [1] closed
+Feb 23 17:29 : client: [2] opened from [::1]:60696
+Feb 23 17:29 : client: [2] closed
+Feb 23 17:29 : client: [3] opened from [::1]:60852
+Feb 23 17:29 : client: [3] closed
+Feb 23 17:30 : client: [4] opened from [::1]:60982
+Feb 23 17:35 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/05. Chlorine.mp3"
+Feb 23 17:38 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/06. Smithereens.mp3"
+Feb 23 17:42 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/07. Neon Gravestones.mp3"
+Feb 23 17:47 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/08. The Hype.mp3"
+Feb 23 17:50 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/09. Nico And The Niners.mp3"
+Feb 23 17:55 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/10. Cut My Lip.mp3"
+Feb 23 18:01 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/11. Bandito.mp3"
+Feb 23 18:04 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/12. Pet Cheetah.mp3"
+Feb 23 18:07 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/13. Legend.mp3"
+Feb 23 18:12 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/14. Leave the City.mp3"
+Feb 23 18:15 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/01. Jumpsuit.mp3"
+Feb 23 18:18 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/02. Levitate.mp3"
+Feb 23 18:22 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/03. Morph.mp3"
+Feb 23 18:25 : exception: Failed to play on "Alsa" (alsa): snd_pcm_poll_descriptors() failed: Broken pipe
+Feb 23 18:25 : client: [5] opened from [::1]:59810
+Feb 23 18:25 : client: [5] closed
+Feb 23 18:25 : client: [6] opened from [::1]:59820
+Feb 23 18:25 : client: [6] closed
+Feb 23 23:01 : client: [4] closed
+Feb 23 23:01 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/04. My Blood.mp3"
+Feb 25 02:05 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 25 02:05 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 25 02:05 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 25 02:05 : exception: bind to '0.0.0.0:8000' failed (continuing anyway, because binding to '[::]:8000' succeeded): Failed to bind socket: Address already in use
+Feb 25 02:05 : client: [0] opened from [::1]:57846
+Feb 25 02:05 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 25 02:05 : client: [1] opened from [::1]:57906
+Feb 25 02:05 : client: [0] closed
+Feb 25 02:06 : client: [1] closed
+Feb 25 02:06 : client: [2] opened from [::1]:58160
+Feb 25 19:03 : client: [2] closed
+Feb 26 04:30 : client: [3] opened from [::1]:50232
+Feb 26 04:30 : client: [3] closed
+Feb 26 04:30 : client: [4] opened from [::1]:50234
+Feb 26 04:30 : client: [4] closed
+Feb 26 06:41 : client: [5] opened from [::1]:51650
+Feb 26 06:41 : client: [5] closed
+Feb 26 06:41 : client: [6] opened from [::1]:51654
+Feb 26 06:47 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/11. Bandito.mp3"
+Feb 26 20:24 : client: [7] opened from [::1]:55010
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+Feb 26 20:24 : exception: Failed to open "Alsa" (alsa)
+Feb 26 20:24 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Feb 26 20:24 : client: [7] closed
+Feb 26 20:29 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/11. Bandito.mp3"
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+Feb 26 20:29 : exception: Failed to open "Alsa" (alsa)
+Feb 26 20:29 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Feb 26 20:33 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/12. Pet Cheetah.mp3"
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+Feb 26 20:33 : exception: Failed to open "Alsa" (alsa)
+Feb 26 20:33 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Feb 26 20:36 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/13. Legend.mp3"
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+Feb 26 20:36 : exception: Failed to open "Alsa" (alsa)
+Feb 26 20:36 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Feb 26 20:40 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/14. Leave the City.mp3"
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+Feb 26 20:40 : exception: Failed to open "Alsa" (alsa)
+Feb 26 20:40 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Feb 26 20:44 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/01. Jumpsuit.mp3"
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+Feb 26 20:44 : exception: Failed to open "Alsa" (alsa)
+Feb 26 20:44 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Feb 26 20:47 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/02. Levitate.mp3"
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+Feb 26 20:47 : exception: Failed to open "Alsa" (alsa)
+Feb 26 20:47 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Feb 26 20:51 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/03. Morph.mp3"
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+Feb 26 20:51 : exception: Failed to open "Alsa" (alsa)
+Feb 26 20:51 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Feb 26 20:55 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/04. My Blood.mp3"
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+Feb 26 20:55 : exception: Failed to open "Alsa" (alsa)
+Feb 26 20:55 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Feb 26 21:00 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/05. Chlorine.mp3"
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+Feb 26 21:00 : exception: Failed to open "Alsa" (alsa)
+Feb 26 21:00 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Feb 26 21:03 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/06. Smithereens.mp3"
+Feb 26 21:04 : client: [8] opened from [::1]:55302
+Feb 26 21:04 : client: [8] closed
+Feb 27 21:13 : client: [9] opened from [::1]:33398
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+Feb 27 21:13 : exception: Failed to open "Alsa" (alsa)
+Feb 27 21:13 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Feb 27 21:13 : client: [9] closed
+Feb 27 21:13 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 27 21:13 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 27 21:13 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 27 21:13 : exception: Failed to enable output "my http stream" (httpd)
+Feb 27 21:13 : exception: nested: Failed to bind to '[::]:8000'
+Feb 27 21:13 : exception: Failed to bind socket: Address already in use
+Feb 27 21:13 : client: [10] opened from [::1]:33438
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+Feb 27 21:13 : exception: Failed to open "Alsa" (alsa)
+Feb 27 21:13 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+Feb 27 21:14 : exception: Failed to open "Alsa" (alsa)
+Feb 27 21:14 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+Feb 27 21:14 : exception: Failed to open "Alsa" (alsa)
+Feb 27 21:14 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Feb 27 21:14 : client: [10] closed
+Feb 27 21:14 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/07. Neon Gravestones.mp3"
+Feb 27 21:14 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/07. Neon Gravestones.mp3"
+Feb 27 21:14 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 27 21:14 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 27 21:14 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 27 21:14 : exception: bind to '0.0.0.0:8000' failed (continuing anyway, because binding to '[::]:8000' succeeded): Failed to bind socket: Address already in use
+Feb 27 21:14 : client: [0] opened from [::1]:33518
+Feb 27 21:14 : client: [1] opened from [::1]:33520
+Feb 27 21:14 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+Feb 27 21:14 : exception: Failed to open "Alsa" (alsa)
+Feb 27 21:14 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+Feb 27 21:14 : exception: Failed to open "Alsa" (alsa)
+Feb 27 21:14 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Feb 27 21:20 : client: [1] closed
+Feb 27 21:49 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/01. Jumpsuit.mp3"
+Feb 27 21:52 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/02. Levitate.mp3"
+Feb 27 21:56 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/03. Morph.mp3"
+Feb 27 22:00 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/04. My Blood.mp3"
+Feb 27 22:05 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/05. Chlorine.mp3"
+Feb 27 22:08 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/06. Smithereens.mp3"
+Feb 27 22:12 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/07. Neon Gravestones.mp3"
+Feb 27 22:17 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/08. The Hype.mp3"
+Feb 27 22:20 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/09. Nico And The Niners.mp3"
+Feb 27 22:25 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/10. Cut My Lip.mp3"
+Feb 27 22:31 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/11. Bandito.mp3"
+Feb 27 22:34 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/12. Pet Cheetah.mp3"
+Feb 27 22:37 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/13. Legend.mp3"
+Feb 27 22:41 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/14. Leave the City.mp3"
+Feb 27 23:38 : player: played "2f/Back Of My Mind-509984661.mp3"
+Mar 01 14:24 : client: [0] closed
+Mar 01 19:05 : client: [2] opened from [::1]:52012
+Mar 01 19:08 : client: [2] closed
+Mar 01 19:10 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/01. Jumpsuit.mp3"
+Mar 01 19:12 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/02. Levitate.mp3"
+Mar 01 19:16 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/03. Morph.mp3"
+Mar 01 19:20 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/04. My Blood.mp3"
+Mar 01 19:26 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/05. Chlorine.mp3"
+Mar 01 19:29 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/06. Smithereens.mp3"
+Mar 01 19:32 : exception: Failed to play on "Alsa" (alsa): snd_pcm_poll_descriptors() failed: Broken pipe
+Mar 01 19:32 : client: [3] opened from [::1]:52594
+Mar 01 19:32 : client: [3] closed
+Mar 01 19:36 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/08. The Hype.mp3"
+Mar 01 19:40 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/09. Nico And The Niners.mp3"
+Mar 01 19:45 : player: played "Twenty One Pilots - Trench (2018) 320 KBPS/10. Cut My Lip.mp3"
+Mar 01 19:46 : client: [4] opened from [::1]:52884
+Mar 01 19:46 : player: played "Linkin Park/Linkin Park - In the End.mp3"
+Mar 01 19:50 : player: played "Linkin Park/Linkin Park - In the End.mp3"
+Mar 01 19:54 : player: played "Linkin Park/Linkin Park - In the End.mp3"
+Mar 01 19:56 : client: [5] opened from [::1]:53168
+Mar 01 19:56 : client: [5] closed
+Mar 01 19:57 : client: [6] opened from [::1]:53174
+Mar 01 19:57 : client: [6] closed
+Mar 01 19:57 : client: [7] opened from [::1]:53182
+Mar 01 19:57 : client: [7] closed
+Mar 01 23:21 : client: [8] opened from [::1]:58058
+Mar 01 23:21 : client: [8] closed
+Mar 01 23:21 : client: [9] opened from [::1]:58060
+Mar 01 23:21 : client: [9] closed
+Mar 01 23:21 : client: [4] closed
+Mar 01 23:22 : client: [10] opened from [::1]:58072
+Mar 01 23:22 : exception: Failed to play on "Alsa" (alsa): snd_pcm_poll_descriptors() failed: Broken pipe
+Mar 01 23:22 : client: [11] opened from [::1]:58134
+Mar 01 23:22 : client: [11] closed
+Mar 04 20:35 : client: [10] closed
+Mar 14 15:04 : client: [12] opened from [::1]:34508
+Mar 14 15:04 : client: [12] closed
+Mar 14 15:04 : client: [13] opened from [::1]:34510
+Mar 14 15:04 : client: [13] closed
+Apr 02 17:16 : player: played "Linkin Park/Linkin Park - In the End.mp3"
