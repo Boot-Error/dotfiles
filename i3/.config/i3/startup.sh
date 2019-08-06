@@ -8,6 +8,7 @@ nm-applet &
 dunst &
 udiskie &
 flameshot &
+albert &
 # flatpak run org.videolan.VLC --extraintf rc --rc-host localhost:51234 &
 flatpak run org.telegram.desktop &
 # flatpak run com.github.hluk.copyq &

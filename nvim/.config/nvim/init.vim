@@ -25,6 +25,7 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-surround'
 Plug 'mattn/emmet-vim'
+Plug 'w0rp/ale'
 
 call plug#end()
 
@@ -35,7 +36,11 @@ let g:ycm_autoclose_preview_window_after_completion=1
 
 " }}
 
-"  
+" ALE {
+
+
+" }
+
 
 " }
 
@@ -80,6 +85,8 @@ tnoremap <C-w>k <Esc><C-\><C-N><C-w>k
 tnoremap <C-w>l <Esc><C-\><C-N><C-w>l
 tnoremap <C-Esc> <Esc><C-\><C-N>:q<cr>
 
+command Gw :Gwrite
+
 " }
 
 " rust settings {
@@ -122,7 +129,7 @@ au FileType python setlocal
 
 " JSON settings {
 
-au FileType json :%!python -m json.tool %<CR> 
+au FileType json :%!python -m json.tool %<CR>
 
 " }
 
