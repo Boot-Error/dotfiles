@@ -29,3 +29,9 @@ alias gpom="git push -u origin master"
 # others
 alias tst="date -Iseconds"
 alias cproc="ps aux | grep "
+
+# taskwarrior
+alias in="task add +in"
+alias tin="task in"
+alias tadd="task add +in"
+alias think='tickle +1d'

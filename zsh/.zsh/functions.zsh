@@ -70,3 +70,10 @@ function saybig() {
 function vlctl() {
 	echo $@ | nc localhost 51234 > /dev/null
 }
+
+# taskwarrior GTD
+function tickle() {
+	deadline=$1
+	shift
+	in +tickle wait:$deadline $@
+}
