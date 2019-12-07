@@ -1,0 +1,21 @@
+IMAPAccount clg
+Host imap.gmail.com
+User 161210045@nitdelhi.ac.in 
+Pass vnxyctfpiapmkqsi 
+SSLType IMAPS
+AuthMechs LOGIN
+
+IMAPStore clg-remote
+Account clg
+
+MaildirStore clg-local
+Path ~/.mutt/mailbox/clg/
+Inbox ~/.mutt/mailbox/clg/inbox
+
+Channel clg-inbox
+Master :clg-remote:
+Slave :clg-local:
+Patterns "INBOX"
+
+Group clg
+channel clg-inbox

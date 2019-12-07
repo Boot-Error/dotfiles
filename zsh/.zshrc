@@ -8,6 +8,7 @@ ENABLE_CORRECTION="true"
 
 plugins=(
   git
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -27,3 +28,8 @@ unset conf
 
 # added by travis gem
 [ -f /home/booterror/.travis/travis.sh ] && source /home/booterror/.travis/travis.sh
+
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line
+
+eval "$(lua /home/booterror/Development/Contributing/hacktoberfest/z.lua/z.lua --init zsh)"

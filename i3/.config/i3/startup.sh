@@ -1,7 +1,10 @@
 #!/bin/bash
 
 xrandr --output eDP1 --mode 1920x1080
+autorandr -l standalone
 # xinput set-prop 13 283 1
+
+autorandr
 
 feh --bg-scale /home/booterror/wallpaper.jpg
 nm-applet &

@@ -23,7 +23,7 @@ gaps outer 5
 
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 # font pango:DejaVu Sans Mono 8
-font pango:xos4 Terminus 8
+font pango:Isoveka 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -34,15 +34,10 @@ bindsym XF86MonBrightnessDown	exec light -U 10
 bindsym XF86AudioRaiseVolume	exec amixer set Master playback 5%+
 bindsym XF86AudioLowerVolume	exec amixer set Master playback 5%-
 
-# vlc player controls
-# bindsym XF86AudioPlay			    exec echo pause | nc localhost 51234 > /dev/null 
-# bindsym XF86AudioPrev			    exec echo prev | nc localhost 51234 > /dev/null 
-# bindsym XF86AudioNext			    exec echo next | nc localhost 51234 > /dev/null 
-
 # mpc music player controls
-bindsym XF86AudioPlay			exec mpc toggle
-bindsym XF86AudioPrev			exec mpc prev
-bindsym XF86AudioNext			exec mpc next
+bindsym XF86AudioPlay			exec playerctl play-pause
+bindsym XF86AudioPrev			exec playerctl previous
+bindsym XF86AudioNext			exec playerctl next
 
 bindsym Print					exec flameshot gui -p ~/Pictures/Screenshots/
 
@@ -50,6 +45,7 @@ bindsym $mod+Return				exec --no-startup-id alacritty
 
 bindsym $mod+c 					exec --no-startup-id rofi -show drun -theme gruvbox-soft -show-icons
 bindsym $mod+w 					exec --no-startup-id rofi -show window -theme gruvbox-soft -show-icons
+bindsym $mod+d 					exec --no-startup-id rofi-autorandr -theme gruvbox-soft -show-icons
 bindsym $mod+x 					exec --no-startup-id /home/booterror/.config/i3/lock.sh 
 
 # kill focused window
@@ -136,7 +132,9 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Going AFK?' -b 'suspend' 'systemctl suspend' -b 'reboot' 'systemctl reboot'"
+
+bindsym $mod+Shift+d exec "i3-nagbar -t warning -m 'Change Display Configuration?' -b 'V1' 'autorandr -l vertical-1' -b 'V2' 'autorandr -l vertical-2' -b 'H2' 'autorandr -l horizontal-2' -b 'standalone' 'autorandr -l standalone'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -165,8 +163,8 @@ mode "resize" {
 mode "screenctl" {
 	
 		bindsym h exec --no-startup-id redshift -P -O 3500
-		bindsym j exec --no-startup-id light -U 10
-		bindsym k exec --no-startup-id light -A 10
+		bindsym j exec --no-startup-id xbacklight -inc 10
+		bindsym k exec --no-startup-id xbacklight -dec 10
 		bindsym l exec --no-startup-id redshift -P -O 6500
 
         bindsym Return mode "default"

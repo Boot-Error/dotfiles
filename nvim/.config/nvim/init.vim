@@ -26,6 +26,7 @@ Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-surround'
 Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -71,6 +72,7 @@ nnoremap <C-k> :TagbarToggle<cr>
 
 nnoremap <leader>b :Buffers<cr>
 nnoremap <leader>f :Files<cr>
+nnoremap <leader>w :Windows<cr>
 
 nnoremap <leader>g :Goyo<cr>
 

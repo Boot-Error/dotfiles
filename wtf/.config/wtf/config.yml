@@ -1,0 +1,155 @@
+
+wtf:
+  colors:
+    border:
+      focusable: darkslateblue
+      focused: orange
+      normal: gray
+  grid:
+    columns: [32, 32, 32, 32, 32]
+    rows: [10, 10, 10, 4, 4]
+  refreshInterval: 1
+  mods:
+    clocks_a:
+      colors:
+        rows:
+          even: "lightblue"
+          odd: "white"
+      enabled: true
+      locations:
+        India: "Asia/Kolkata"
+        Qatar: "Asia/Qatar"
+        Vancouver: "America/Vancouver"
+      position:
+        top: 0
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 15
+      sort: "alphabetical"
+      title: "Time Zones"
+      type: "clocks"
+    cmdrunner:
+      args: ["in"]
+      cmd: "task"
+      enabled: true
+      position:
+        top: 2
+        left: 3
+        height: 2
+        width: 2
+      refreshInterval: 30
+    hackernews:
+      enabled: true
+      numberOfStories: 10
+      position:
+        top: 1
+        left: 1
+        height: 1
+        width: 4
+      storyType: top
+      refreshInterval: 900
+      updateInterval: 3600
+    prettyweather:
+      enabled: true
+      city: "New Delhi"
+      position:
+        top: 0
+        left: 2
+        height: 1
+        width: 1
+      refreshInterval: 300
+      unit: "m"
+      view: 0
+      language: "en"
+    ipinfo:
+      colors:
+        name: "lightblue"
+        value: "white"
+      enabled: true
+      position:
+        top: 2
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 150
+    power:
+      enabled: true
+      position:
+        top: 2
+        left: 2
+        height: 1
+        width: 1
+      refreshInterval: 15
+      title: "⚡️ Power"
+    textfile:
+      enabled: true
+      filePath: "~/.config/wtf/config.yml"
+      format: true
+      position:
+        top: 0
+        left: 0
+        height: 4
+        width: 1
+      refreshInterval: 30
+      wrapText: false
+    uptime:
+      args: [""]
+      cmd: "uptime"
+      enabled: true
+      position:
+        top: 3
+        left: 1
+        height: 1
+        width: 2
+      refreshInterval: 30
+      type: cmdrunner
+    digitalclock:
+      color: orange
+      enabled: true
+      font: bigfont
+      hourFormat: 12
+      position:
+        top: 0
+        left: 3
+        height: 1
+        width: 1
+      refreshInterval: 1
+      title: "big clock"
+      type: "digitalclock"
+    gcal:
+      colors:
+        title: "red"
+        eventTime: "lightblue"
+        highlights:
+        - ['1on1|1\/11', 'green']
+        - ['apple|google|aws', 'blue']
+        - ['interview|meet', 'magenta']
+        - ['lunch', 'yellow']
+        past: "gray"
+      calendarReadLevel: "reader"
+      conflictIcon: "🚨"
+      currentIcon: "💥"
+      displayResponseStatus: true
+      email: "161210045@nitdelhi.ac.in"
+      enabled: true
+      eventCount: 12
+      multiCalendar: true
+      position:
+        top: 4
+        left: 0
+        height: 4
+        width: 2
+      refreshInterval: 300
+      secretFile: "~/.config/wtf/gcal-auth.json"
+      showDeclined: true
+      timezone: "Asia/Kolkata"
+      withLocation: true
+    resourceusage:
+      enabled: true
+      position:
+        top: 0
+        left: 4
+        height: 1
+        width: 1
+      refreshInterval: 1

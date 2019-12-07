@@ -1,0 +1,24 @@
+set smtp_authenticators = "login"
+set ssl_force_tls = yes
+
+folder-hook 'clg' 'source ~/.mutt/clg'
+# folder-hook 'personal'
+macro index 1 "<change-folder> =../clg/inbox/<enter>"
+# macro index 2 
+macro index G "!mbsync -a^M" "Update through mbsync"
+set move = no
+
+
+set folder = "~/.mutt/mailbox/clg"
+set spoolfile = "~/.mutt/mailbox/clg/inbox"
+set postponed = "~/.mutt/mailbox/clg/drafts"
+set trash = "+/trash"
+set record = ""
+
+set from = "work@gmail.com"
+set realname = "First Last"
+
+bind pager <down> next-line
+bind pager <up> previous-line
+
+source colors.muttrc
