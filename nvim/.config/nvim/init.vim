@@ -4,7 +4,7 @@
 
 call plug#begin('~/.nvim/plugged')
 
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'rust-lang/rust.vim'
@@ -27,21 +27,36 @@ Plug 'tpope/vim-surround'
 Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
 Plug 'vimwiki/vimwiki'
+Plug 'aserebryakov/vim-todo-lists'
+Plug 'jaredgorski/spacecamp'
+
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 
 call plug#end()
 
 " YouCompleteMe {{
 
-let g:ycm_autoclose_preview_window_after_completion=1
+" let g:ycm_autoclose_preview_window_after_completion=1
 " inoremap <leader>G :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " }}
+
+" Deoplete {
+
+let g:deoplete#enable_at_startup = 1
+
+" }
 
 " ALE {
 
 
 " }
-
 
 " }
 
@@ -56,11 +71,12 @@ let mapleader=" " " leader is SPACE
 set splitbelow
 set splitright
 
+let g:gruvbox_contrast_dark='hard'
 set background=dark
 colorscheme gruvbox
 " highlight Normal ctermbg=NONE
 
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+" let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 " }
 
@@ -76,6 +92,7 @@ nnoremap <leader>w :Windows<cr>
 
 nnoremap <leader>g :Goyo<cr>
 
+" terminal setting
 nnoremap <leader>t :20sp term:///bin/zsh<cr>i
 nnoremap <leader>T :vsp term:///bin/zsh<cr>i
 nnoremap <leader>nt :tabnew term:///bin/zsh<cr>i  
@@ -87,7 +104,15 @@ tnoremap <C-w>k <Esc><C-\><C-N><C-w>k
 tnoremap <C-w>l <Esc><C-\><C-N><C-w>l
 tnoremap <C-Esc> <Esc><C-\><C-N>:q<cr>
 
-command Gw :Gwrite
+" tasksh setting
+nnoremap <leader>m :40sp term:///usr/bin/tasksh<cr>i
+nnoremap <leader>M :vsp term:///usr/bin/tasksh<cr>i
+
+" }
+
+" commands {
+
+command Todo :e project.todo
 
 " }
 
@@ -139,5 +164,34 @@ au FileType json :%!python -m json.tool %<CR>
 "
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
+
+" }
+
+" lua settings {
+
+au FileType lua setlocal
+	\ tabstop=2
+	\ softtabstop=2
+	\ shiftwidth=2
+	\ textwidth=80
+	\ expandtap
+" }
+
+" vimwiki {
+
+let g:vimwiki_list = [
+	\ {'path': '~/Documents/notes', 
+	\ 'template_path': '~/vimwiki/templates/',
+	\ 'template_default': 'default', 
+	\ 'syntax': 'markdown', 
+	\ 'ext': '.md',
+	\ 'path_html': '~/Documents/notes_html/',
+	\ 'custom_wiki2html': '/home/booterror/pandoc_md.sh', 
+	\ 'html_filename_parameterization': 1,
+	\ 'template_ext': '.tpl'}]
+
+let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+
+autocmd BufWritePre *.md :Vimwiki2HTML
 
 " }

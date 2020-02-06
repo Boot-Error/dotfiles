@@ -181,7 +181,8 @@ exec --no-startup-id "/home/booterror/.config/i3/startup.sh"
 
 # i3bar
 bar {
-       status_command i3blocks
+	position top
+	status_command i3blocks
 }
 
 #window management
@@ -190,3 +191,4 @@ for_window [class="Firefox"] move to workspace 2
 for_window [class="TelegramDesktop"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="copyq"] floating enable
+for_window [class="SpeedCrunch"] floating enable

@@ -35,3 +35,6 @@ alias in="task add +in"
 alias tin="task in"
 alias tadd="task add +in"
 alias think='tickle +1d'
+
+# notes
+alias vn="v +VimwikiIndex"
