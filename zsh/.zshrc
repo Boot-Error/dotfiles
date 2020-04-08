@@ -21,9 +21,7 @@ for conf in $(ls $ZSHCONF/*.zsh); do
 done
 unset conf
 
-# lazily fixing some stupid persmission with my zsh not cd into home directory
-# cd
-
+# fzf plugin
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # added by travis gem
@@ -32,4 +30,8 @@ unset conf
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
-eval "$(lua /home/booterror/Development/Contributing/hacktoberfest/z.lua/z.lua --init zsh)"
+# z.lua
+eval "$(lua /home/booterror/Softwares/z.lua/z.lua --init zsh)"
+
+# virtualenvwrapper
+source $(which virtualenvwrapper.sh)

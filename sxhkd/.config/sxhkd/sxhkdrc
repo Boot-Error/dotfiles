@@ -13,17 +13,8 @@ XF86AudioMute
 XF86AudioPlay
 	mpc toggle
 
-super + c
-	rofi -font "ypn envypn 12" -show drun
-
-super + w
-	rofi -show window
-
-super + x
-	9menu.sh
-
-super + Return
-	termite
-
 Print
 	flameshot gui -p ~/Pictures/Screenshots/
+
+super + x
+	/home/booterror/.local/bin/run-xscreenlock.sh
