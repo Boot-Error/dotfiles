@@ -8,7 +8,6 @@ cd /mnt/home/booterror
 opeqqn_with 
 open_with e
 move
-
 rm
 open_ 
 open_with 
@@ -19,3 +18,4 @@ paster
 paste
 delete
 shell
+
