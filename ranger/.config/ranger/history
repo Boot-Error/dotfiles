@@ -1,5 +1,4 @@
 search 160821
-copy
 delete 
 rename VighneshSK_resume.pdf
 cd /mnt/home/booterror/Pictures
@@ -9,10 +8,14 @@ cd /mnt/home/booterror
 opeqqn_with 
 open_with e
 move
-paste
-
 rm
-delete
 open_ 
 open_with 
 open_with vim
+copy
+cd
+paster
+paste
+delete
+shell
+

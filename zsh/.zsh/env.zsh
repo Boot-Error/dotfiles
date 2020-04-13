@@ -14,3 +14,7 @@ export EXPRNDEV=$DEVEL/Experiments
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 export MOZ_USE_XINPUT2=1
+
+# vritualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$DEVEL

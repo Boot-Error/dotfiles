@@ -1,21 +1,23 @@
-IMAPAccount clg
+IMAPAccount nitdelhi
 Host imap.gmail.com
 User 161210045@nitdelhi.ac.in 
-Pass vnxyctfpiapmkqsi 
+Pass wyjfwzwnlsboaeiv
 SSLType IMAPS
 AuthMechs LOGIN
 
-IMAPStore clg-remote
-Account clg
+IMAPStore nitdelhi-remote
+Account nitdelhi
 
-MaildirStore clg-local
-Path ~/.mutt/mailbox/clg/
-Inbox ~/.mutt/mailbox/clg/inbox
+MaildirStore nitdelhi-local
+Path ~/Mail/nitdelhi
+Inbox ~/Mail/nitdelhi/Inbox
+Subfolders Verbatim
 
-Channel clg-inbox
-Master :clg-remote:
-Slave :clg-local:
-Patterns "INBOX"
+Channel nitdelhi-inbox
+Master :nitdelhi-remote:
+Slave :nitdelhi-local:
+Patterns INBOX
+SyncState *
 
-Group clg
-channel clg-inbox
+Group nitdelhi
+channel nitdelhi-inbox

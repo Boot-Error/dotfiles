@@ -189,7 +189,7 @@ let g:vimwiki_list = [
 	\ 'syntax': 'markdown', 
 	\ 'ext': '.md',
 	\ 'path_html': '~/Documents/notes_html/',
-	\ 'custom_wiki2html': '/home/booterror/pandoc_md.sh', 
+	\ 'custom_wiki2html': '/home/booterror/Scripts/pandoc/pandoc_md.sh', 
 	\ 'html_filename_parameterization': 1,
 	\ 'template_ext': '.tpl'}]
 
