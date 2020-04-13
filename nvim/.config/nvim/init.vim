@@ -28,7 +28,8 @@ Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
 Plug 'vimwiki/vimwiki'
 Plug 'aserebryakov/vim-todo-lists'
-Plug 'jaredgorski/spacecamp'
+Plug 'camspiers/animate.vim'
+Plug 'camspiers/lens.vim'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -77,6 +78,8 @@ colorscheme gruvbox
 " highlight Normal ctermbg=NONE
 
 " let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
+let g:lens#disabled_filetypes = ['nerdtree', 'fzf']
 
 " }
 
