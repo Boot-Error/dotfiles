@@ -5,7 +5,6 @@ alias e="vim"
 alias v="vim"
 alias o="xdg-open"
 alias g="git"
-alias t="task"
 
 alias ls="ls --color=auto"
 alias ll="exa -lh"
@@ -31,10 +30,14 @@ alias tst="date -Iseconds"
 alias cproc="ps aux | grep "
 
 # taskwarrior
-alias in="task add +in"
-alias tin="task in"
-alias tadd="task add +in"
-alias think='tickle +1d'
+# alias in="task add +in"
+# alias tin="task in"
+# alias tadd="task add +in"
+# alias think='tickle +1d'
+
+# topydo
+alias t="topydo"
+alias tadd="topydo add"
 
 # notes
 alias vn="v +VimwikiIndex"

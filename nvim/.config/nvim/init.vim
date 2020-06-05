@@ -30,6 +30,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'aserebryakov/vim-todo-lists'
 Plug 'camspiers/animate.vim'
 Plug 'camspiers/lens.vim'
+Plug 'severin-lemaignan/vim-minimap'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -56,6 +57,15 @@ let g:deoplete#enable_at_startup = 1
 
 " ALE {
 
+
+" }
+
+" { Animate vim
+
+let g:animate#duration = 200.0
+let g:fzf_layout = {
+ \ 'window': 'new | wincmd J | resize 1 | call animate#window_percent_height(0.5)'
+\ }
 
 " }
 

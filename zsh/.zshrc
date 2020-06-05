@@ -31,7 +31,7 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # z.lua
-eval "$(lua /home/booterror/Softwares/z.lua/z.lua --init zsh)"
+eval "$(lua /usr/share/z.lua/z.lua --init zsh)"
 
 # virtualenvwrapper
 source $(which virtualenvwrapper.sh)

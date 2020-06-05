@@ -18,18 +18,16 @@ window:
   # Window dimensions in character columns and lines
   # (changes require restart)
   dimensions:
-    columns: 120
+    columns: 92
     lines: 42
 
   # Adds this many blank pixels of padding around the window
   # Units are physical pixels; this is not DPI aware.
   # (change requires restart)
   padding:
-    x: 5
-    y: 5
+    x: 2
+    y: 2
 
-# Display tabs using this many cells (changes require restart)
-tabspaces: 4
 
 # When true, bold text is drawn using the bright variant of colors.
 draw_bold_text_with_bright_colors: true
@@ -57,26 +55,26 @@ font:
   # The normal (roman) font face to use.
   normal:
     # family: Monoid
-    family: Fira Code # should be "Menlo" or something on macOS.
+    family: Iosevka Medium # should be "Menlo" or something on macOS.
     # Style can be specified to pick a specific face.
     style: Regular
 
   # The bold font face
   bold:
     # family: Monoid
-    family: Fira Code # should be "Menlo" or something on macOS.
+    family: Iosevka Medium # should be "Menlo" or something on macOS.
     # Style can be specified to pick a specific face.
     style: Bold
 
   # The italic font face
   italic:
     # family: Monoid
-    family: Fira Code # should be "Menlo" or something on macOS.
+    family: Iosevka Medium # should be "Menlo" or something on macOS.
     # Style can be specified to pick a specific face.
     style: Italic
 
   # Point size of the font
-  size: 9
+  size: 8
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
