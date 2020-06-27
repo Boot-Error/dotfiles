@@ -4,6 +4,9 @@
 export GOPATH=$HOME/Development/.godevel
 export PATH=$PATH:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/dotfiles/scripts:$GOPATH/bin:/home/booterror/.gem/ruby/2.6.0/bin
 
+## the scripts in dotfiles are added to the path
+export PATH=$PATH:$HOME/dotfiles/scripts
+
 export EDITOR=nvim
 export TERMINAL=alacritty
 
