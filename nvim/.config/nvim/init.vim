@@ -31,6 +31,8 @@ Plug 'aserebryakov/vim-todo-lists'
 Plug 'camspiers/animate.vim'
 Plug 'camspiers/lens.vim'
 Plug 'severin-lemaignan/vim-minimap'
+Plug 'neomake/neomake'
+Plug 'wsdjeg/FlyGrep.vim'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -96,7 +98,6 @@ let g:lens#disabled_filetypes = ['nerdtree', 'fzf']
 " keymaps {
 
 nnoremap <leader>r :set number! relativenumber!<cr>
-nnoremap <CR> :nohlsearch<cr>
 nnoremap <C-k> :TagbarToggle<cr>
 
 nnoremap <leader>b :Buffers<cr>

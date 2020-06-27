@@ -37,6 +37,7 @@ alias cproc="ps aux | grep "
 
 # topydo
 alias t="topydo"
+alias tcol="topydo columns"
 alias tadd="topydo add"
 
 # notes
