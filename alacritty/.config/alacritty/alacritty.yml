@@ -18,18 +18,16 @@ window:
   # Window dimensions in character columns and lines
   # (changes require restart)
   dimensions:
-    columns: 120
+    columns: 92
     lines: 42
 
   # Adds this many blank pixels of padding around the window
   # Units are physical pixels; this is not DPI aware.
   # (change requires restart)
   padding:
-    x: 5
-    y: 5
+    x: 2
+    y: 2
 
-# Display tabs using this many cells (changes require restart)
-tabspaces: 4
 
 # When true, bold text is drawn using the bright variant of colors.
 draw_bold_text_with_bright_colors: true
@@ -54,29 +52,19 @@ draw_bold_text_with_bright_colors: true
 # * https://wiki.archlinux.org/index.php/font_configuration#Fontconfig_configuration
 # * file:///usr/share/doc/fontconfig/fontconfig-user.html
 font:
-  # The normal (roman) font face to use.
   normal:
-    # family: Monoid
-    family: Fira Code # should be "Menlo" or something on macOS.
-    # Style can be specified to pick a specific face.
+    family: Iosevka Light # should be "Menlo" or something on macOS.
     style: Regular
 
-  # The bold font face
   bold:
-    # family: Monoid
-    family: Fira Code # should be "Menlo" or something on macOS.
-    # Style can be specified to pick a specific face.
+    family: Iosevka Semibold # should be "Menlo" or something on macOS.
     style: Bold
 
-  # The italic font face
   italic:
-    # family: Monoid
-    family: Fira Code # should be "Menlo" or something on macOS.
-    # Style can be specified to pick a specific face.
+    family: Iosevka Light # should be "Menlo" or something on macOS.
     style: Italic
 
-  # Point size of the font
-  size: 9
+  size: 10
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
@@ -102,40 +90,48 @@ debug.render_timer: false
 # and cursor.background colors, otherwise invert the colors of the cursor.
 # custom_cursor_colors: false
 
-# Base16 Gruvbox dark, medium 256 - alacritty color config
-# Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+# Base16 Summerfruit Dark 256 - alacritty color config
+# Christopher Corley (http://christop.club/)
 colors:
   # Default colors
   primary:
-    background: '0x1d2021'
-    foreground: '0xd5c4a1'
+    background: '0x151515'
+    foreground: '0xd0d0d0'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x282828'
-    cursor: '0xd5c4a1'
+    text: '0x151515'
+    cursor: '0xd0d0d0'
 
   # Normal colors
   normal:
-    black:   '0x282828'
-    red:     '0xfb4934'
-    green:   '0xb8bb26'
-    yellow:  '0xfabd2f'
-    blue:    '0x83a598'
-    magenta: '0xd3869b'
-    cyan:    '0x8ec07c'
-    white:   '0xd5c4a1'
+    black:   '0x151515'
+    red:     '0xff0086'
+    green:   '0x00c918'
+    yellow:  '0xaba800'
+    blue:    '0x3777e6'
+    magenta: '0xad00a1'
+    cyan:    '0x1faaaa'
+    white:   '0xd0d0d0'
 
   # Bright colors
   bright:
-    black:   '0x665c54'
-    red:     '0xfb4934'
-    green:   '0xb8bb26'
-    yellow:  '0xfabd2f'
-    blue:    '0x83a598'
-    magenta: '0xd3869b'
-    cyan:    '0x8ec07c'
-    white:   '0xd5c4a1'
+    black:   '0x505050'
+    red:     '0xff0086'
+    green:   '0x00c918'
+    yellow:  '0xaba800'
+    blue:    '0x3777e6'
+    magenta: '0xad00a1'
+    cyan:    '0x1faaaa'
+    white:   '0xffffff'
+
+  indexed_colors:
+    - { index: 16, color: '0xfd8900' }
+    - { index: 17, color: '0xcc6633' }
+    - { index: 18, color: '0x202020' }
+    - { index: 19, color: '0x303030' }
+    - { index: 20, color: '0xb0b0b0' }
+    - { index: 21, color: '0xe0e0e0' }
 
 # Visual Bell
 #
@@ -159,7 +155,7 @@ colors:
 #
 # To completely disable the visual bell, set its duration to 0.
 #
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 0
 

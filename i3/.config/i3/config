@@ -177,7 +177,7 @@ bindsym $mod+b mode "screenctl"
 set $color #383838
 
 # startup applications
-exec --no-startup-id "/home/booterror/.config/i3/startup.sh"
+# exec --no-startup-id "/home/booterror/.config/i3/startup.sh"
 
 # i3bar
 bar {

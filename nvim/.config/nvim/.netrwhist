@@ -1,5 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
-let g:netrw_dirhist_3='/home/booterror/Softwares/slstatus'
-let g:netrw_dirhist_2='/home/booterror/Development/triny_assistant/task-service'
-let g:netrw_dirhist_1='/home/booterror/.mutt'
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/booterror/Development/PSapient/Training/webapplication'
+let g:netrw_dirhist_9='/home/booterror/Development/Contributing/pjp2/week2/processing-fee-calculator/src/main/java/com/sapient/pjp2'
+let g:netrw_dirhist_8='/home/booterror/Development/Contributing/pjp2/week2/processing-fee-calculator/src/main/java/com/sapient'
+let g:netrw_dirhist_7='/home/booterror/Development/Contributing/pjp2/week2/processing-fee-calculator/src/main/java/com'
+let g:netrw_dirhist_6='/home/booterror/Development/Contributing/pjp2/week2/processing-fee-calculator/src/main/java'
+let g:netrw_dirhist_5='/home/booterror/Development/Contributing/pjp2/week2/processing-fee-calculator/src/main'
+let g:netrw_dirhist_4='/home/booterror/Development/Contributing/pjp2/week2/processing-fee-calculator/src'
+let g:netrw_dirhist_3='/home/booterror/Development/Contributing/pjp2/week2/processing-fee-calculator/src/main/java/com/sapient/pjp2'
+let g:netrw_dirhist_2='/home/booterror/Development/Contributing/pjp2/week2/processing-fee-calculator/src/main/java/com/sapient'
+let g:netrw_dirhist_1='/home/booterror/Development/Contributing/pjp2/week2/processing-fee-calculator/src/main/java/com'

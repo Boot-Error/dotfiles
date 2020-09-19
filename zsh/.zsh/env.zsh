@@ -1,5 +1,6 @@
 #!/usr/bin/zsh
 
+
 # path variable
 export GOPATH=$HOME/Development/.godevel
 export PATH=$PATH:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/dotfiles/scripts:$GOPATH/bin:/home/booterror/.gem/ruby/2.6.0/bin
