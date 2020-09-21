@@ -30,12 +30,13 @@ Plug 'camspiers/lens.vim'
 Plug 'neomake/neomake'
 Plug 'ervandew/supertab'
 Plug 'Chiel92/vim-autoformat'
+Plug 'cespare/vim-toml'
 
 " Themes I have tried
-Plug 'adlawson/vim-sorcerer'
+" Plug 'adlawson/vim-sorcerer'
+Plug 'tyrannicaltoucan/vim-deep-space'
 " Plug 'morhetz/gruvbox'
 " Plug 'Soares/base16.nvim'
-Plug 'cespare/vim-toml'
 
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -93,9 +94,13 @@ set splitbelow
 set splitright
 set cursorline
 
-" set background=dark
+set background=dark
 set termguicolors
-colorscheme sorcerer
+colorscheme deep-space
+
+let g:deepspace_italics=1
+let g:airline_theme='deep_space'
+
 " let g:gruvbox_contrast_dark = 'hard'
 " let g:base16_color_modifiers = {'Comment': 'fg=green'}
 
