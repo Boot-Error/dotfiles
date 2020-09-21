@@ -1,6 +1,11 @@
+# vim: set sw=4 ts=4 foldmarker={{,}} foldlevel=0 foldmethod=marker:
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
+
+# {{ Theme
+
+set $color #383838
 
 client.focused               	#121212 #101010 #9e8a8e
 client.focused_inactive 		#101010 #191919 #999999
@@ -12,41 +17,19 @@ hide_edge_borders smart
 new_window pixel 1
 new_float pixel 2
 
-set $mod Mod4
+font pango:Iosveka Light 10
 
 gaps inner 5
 gaps outer 5
 
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
+# }}
 
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-# font pango:DejaVu Sans Mono 8
-font pango:Isoveka 8
+# {{ i3 client keybindings
+
+set $mod Mod4
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
-# various controls
-bindsym XF86MonBrightnessUp		exec light -A 10
-bindsym XF86MonBrightnessDown	exec light -U 10
-bindsym XF86AudioRaiseVolume	exec amixer set Master playback 5%+
-bindsym XF86AudioLowerVolume	exec amixer set Master playback 5%-
-
-# mpc music player controls
-bindsym XF86AudioPlay			exec playerctl play-pause
-bindsym XF86AudioPrev			exec playerctl previous
-bindsym XF86AudioNext			exec playerctl next
-
-bindsym Print					exec flameshot gui -p ~/Pictures/Screenshots/
-
-bindsym $mod+Return				exec --no-startup-id alacritty
-
-bindsym $mod+c 					exec --no-startup-id rofi -show drun -theme gruvbox-soft -show-icons
-bindsym $mod+w 					exec --no-startup-id rofi -show window -theme gruvbox-soft -show-icons
-bindsym $mod+d 					exec --no-startup-id rofi-autorandr -theme gruvbox-soft -show-icons
-bindsym $mod+x 					exec --no-startup-id /home/booterror/.config/i3/lock.sh 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -131,11 +114,47 @@ bindsym $mod+Shift+0 move container to workspace 10
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
+# }}
+
+# {{ flash prompts
+
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Going AFK?' -b 'suspend' 'systemctl suspend' -b 'reboot' 'systemctl reboot'"
 
 bindsym $mod+Shift+d exec "i3-nagbar -t warning -m 'Change Display Configuration?' -b 'V1' 'autorandr -l vertical-1' -b 'V2' 'autorandr -l vertical-2' -b 'H2' 'autorandr -l horizontal-2' -b 'standalone' 'autorandr -l standalone'"
 
+# }}
+
+# {{ Additional Key Bindings
+
+# various controls
+bindsym XF86MonBrightnessUp		exec light -A 10
+bindsym XF86MonBrightnessDown	exec light -U 10
+bindsym XF86AudioRaiseVolume	exec amixer set Master playback 5%+
+bindsym XF86AudioLowerVolume	exec amixer set Master playback 5%-
+
+# mpc music player controls
+bindsym XF86AudioPlay			exec playerctl play-pause
+bindsym XF86AudioPrev			exec playerctl previous
+bindsym XF86AudioNext			exec playerctl next
+
+bindsym Print					exec flameshot gui -p ~/Pictures/Screenshots/
+
+bindsym $mod+Return				exec --no-startup-id alacritty
+
+bindsym $mod+c 					exec --no-startup-id rofi -show drun -show-icons
+bindsym $mod+w 					exec --no-startup-id rofi -show window -show-icons
+bindsym $mod+d 					exec --no-startup-id rofi-autorandr -theme gruvbox-soft -show-icons
+bindsym $mod+x 					exec --no-startup-id /home/booterror/.config/i3/lock.sh 
+
+bindsym $mod+Shift+v            exec --no-startup-id pavucontrol
+
+# }}
+
+# {{ Modes
+
+# {{ Resize Mode
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -159,7 +178,9 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+# }}
 
+# {{ display control mode
 mode "screenctl" {
 	
 		bindsym h exec --no-startup-id redshift -P -O 3500
@@ -170,11 +191,12 @@ mode "screenctl" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+# }}
 
 bindsym $mod+r mode "resize"
 bindsym $mod+b mode "screenctl"
 
-set $color #383838
+# }}
 
 # startup applications
 # exec --no-startup-id "/home/booterror/.config/i3/startup.sh"
@@ -185,10 +207,16 @@ bar {
 	status_command i3blocks
 }
 
-#window management
+# {{ Application Specific configs
+
 for_window [class="Sxiv"] floating enable
 for_window [class="Firefox"] move to workspace 2
 for_window [class="TelegramDesktop"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="copyq"] floating enable
 for_window [class="SpeedCrunch"] floating enable
+for_window [class="Yad"] floating enable
+for_window [class="discord"] floating enable
+for_window [class="Steam"] floating enable
+
+# }}
