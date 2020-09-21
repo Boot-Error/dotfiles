@@ -1,16 +1,10 @@
-Xft.dpi: 108 
+! Xft.dpi: 10
 !Xft.autohint: 0
 !Xft.lcdfilter:  lcddefault
 !Xft.hintstyle:  hintfull
 !Xft.hinting: 1
 !Xft.antialias: 1
 Xft.rgba: rgb
-
-URxrvt.termName: rxvt-unicode
-URxvt.scrollBar: false
-URxvt.background: gray
-URxvt.foreground: gray
-URxvt.font: xtf:ypn envypn:pixelsize=13:style=Regular
 
 ! rofi.font: xos4 Terminus 12
 
@@ -25,19 +19,41 @@ twobwm.fixed_unkill_color: #f2f23c
 twobwm.inverted_colors: false
 twobwm.enable_compton: true
 
-color0:  #282828 
-color1:  #3c3836 
-color2:  #504945 
-color3:  #665c54 
-color4:  #bdae93 
-color5:  #d5c4a1 
-color6:  #ebdbb2 
-color7:  #fbf1c7 
-color8:  #fb4934 
-color9:  #fe8019 
-color10: #fabd2f 
-color11: #b8bb26 
-color12: #8ec07c 
-color13: #83a598 
-color14: #d3869b 
-color15: #d65d0e 
+! Challenger Deep Xresources palette
+
+! special
+*.foreground:   #cbe3e7
+*.background:   #1b182c
+*.cursorColor:  #fbfcfc
+
+! black
+*.color0:       #100e23
+*.color8:       #565575
+
+! red
+*.color1:       #ff8080
+*.color9:       #ff5458
+
+! green
+*.color2:       #95ffa4
+*.color10:      #62d196
+
+! yellow
+*.color3:       #ffe9aa
+*.color11:      #ffb378
+
+! blue
+*.color4:       #91ddff
+*.color12:      #65b2ff
+
+! magenta
+*.color5:       #c991e1
+*.color13:      #906cff
+
+! cyan
+*.color6:       #aaffe4
+*.color14:      #63f2f1
+
+! white
+*.color7:       #cbe3e7
+*.color15:      #a6b3cc
