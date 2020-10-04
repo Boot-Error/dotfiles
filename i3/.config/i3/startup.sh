@@ -1,19 +1,17 @@
-#!/bin/bash
+#!/bin/zsh
 
-xrandr --output eDP1 --mode 1920x1080
-autorandr -l standalone
-# xinput set-prop 13 283 1
+autorandr -c
 
-autorandr
+dunst -conf ~/.config/dunst/dunstrc
 
-feh --bg-scale /home/booterror/wallpaper.jpg
-nm-applet &
+# feh --bg-scale /home/booterror/wallpaper.jpg
+# nm-applet &
 dunst &
 udiskie &
 flameshot &
 albert &
-# flatpak run org.videolan.VLC --extraintf rc --rc-host localhost:51234 &
-flatpak run org.telegram.desktop &
-# flatpak run com.github.hluk.copyq &
+volctl &
+mictray &
+blueman-applet &
 
-libinput-gestures-setup start
+# libinput-gestures-setup start

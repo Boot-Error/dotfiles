@@ -139,7 +139,7 @@ bindsym XF86AudioPlay			exec playerctl play-pause
 bindsym XF86AudioPrev			exec playerctl previous
 bindsym XF86AudioNext			exec playerctl next
 
-bindsym Print					exec flameshot gui -p ~/Pictures/Screenshots/
+bindsym Print					exec flameshot gui -p ~/Pictures/screenshots/
 
 bindsym $mod+Return				exec --no-startup-id alacritty
 
@@ -218,5 +218,6 @@ for_window [class="SpeedCrunch"] floating enable
 for_window [class="Yad"] floating enable
 for_window [class="discord"] floating enable
 for_window [class="Steam"] floating enable
+for_window [class="zoom"] floating enable
 
 # }}
