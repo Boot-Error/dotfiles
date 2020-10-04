@@ -53,18 +53,18 @@ draw_bold_text_with_bright_colors: true
 # * file:///usr/share/doc/fontconfig/fontconfig-user.html
 font:
   normal:
-    family: Iosevka Light # should be "Menlo" or something on macOS.
+    family: Fira Code Retina # should be "Menlo" or something on macOS.
     style: Regular
 
   bold:
-    family: Iosevka Semibold # should be "Menlo" or something on macOS.
+    family: Fira Code # should be "Menlo" or something on macOS.
     style: Bold
 
   italic:
-    family: Iosevka Light # should be "Menlo" or something on macOS.
-    style: Italic
+    family: Fira Code Light # should be "Menlo" or something on macOS.
+    style: Light
 
-  size: 10
+  size: 8
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
