@@ -1,6 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
-let g:netrw_dirhist_4='/home/booterror/Development/PSapient/Training/assessment2/src/main'
-let g:netrw_dirhist_3='/home/booterror/Development/PSapient/Training/assessment2/src'
-let g:netrw_dirhist_2='/home/booterror/Development/PSapient/Training/assessment2/src/main/resources'
-let g:netrw_dirhist_1='/home/booterror/Development/PSapient/Training/string-assignment'
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/booterror/Development/PSapient/Training/assessments/Assessment-Week3/Vighnesh S Kumar/section1_microservices/consumer-service/src/main/java'
+let g:netrw_dirhist_1='/home/booterror/Development/PSapient/Training/assessments/Assessment-Week3/Vighnesh S Kumar/section1_microservices/consumer-service/src/main'
+let g:netrw_dirhist_0='/home/booterror/Development/PSapient/Training/assessments/Vighnesh S Kumar/html-bootstrap-assessment/mod3_solution'
+let g:netrw_dirhist_9='/home/booterror/Development/PSapient/Training/assessments/Vighnesh S Kumar/html-bootstrap-assessment'
+let g:netrw_dirhist_8='/home/booterror/Development/PSapient/Training/assessments/Vighnesh S Kumar'
+let g:netrw_dirhist_7='/home/booterror/Development/PSapient/Training/assessments'
+let g:netrw_dirhist_6='/home/booterror/Development/PSapient/Training'
+let g:netrw_dirhist_5='/home/booterror/Development/PSapient/Training/assessments'
+let g:netrw_dirhist_4='/home/booterror/Development/PSapient/Training/assessments/Assessment-Week3'
+let g:netrw_dirhist_3='/home/booterror/Development/PSapient/Training/assessments/Assessment-Week3/Vighnesh S Kumar'

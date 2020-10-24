@@ -1,0 +1,52 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+<c-k>b	init.vim	/^nnoremap <c-k>b :CocCommand explorer<CR>$/;"	m
+<c-space>	init.vim	/^inoremap <silent><expr> <c-space> coc#refresh()$/;"	m
+<cr>	init.vim	/^  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\\<C-y>" : "\\<C-g>u\\<CR>"$/;"	m
+<cr>	init.vim	/^  inoremap <expr> <cr> pumvisible() ? "\\<C-y>" : "\\<C-g>u\\<CR>"$/;"	m
+<leader>F	init.vim	/^nmap <leader>F  <Plug>(coc-format-selected)$/;"	m
+<leader>F	init.vim	/^xmap <leader>F  <Plug>(coc-format-selected)$/;"	m
+<leader>T	init.vim	/^nnoremap <leader>T :vsp +term<cr>i$/;"	m
+<leader>b	init.vim	/^nnoremap <leader>b :Buffers<cr>$/;"	m
+<leader>f	init.vim	/^nnoremap <leader>f :RG<cr>$/;"	m
+<leader>go	init.vim	/^nnoremap <leader>go :GFiles<cr>$/;"	m
+<leader>o	init.vim	/^nnoremap <leader>o :Files<cr>$/;"	m
+<leader>rn	init.vim	/^nmap <leader>rn <Plug>(coc-rename)$/;"	m
+<leader>so	init.vim	/^nnoremap <leader>so :GFiles?<cr>$/;"	m
+<leader>t	init.vim	/^nnoremap <leader>t :20sp +term<cr>i$/;"	m
+K	init.vim	/^nnoremap <silent> K :call <SID>show_documentation()<CR>$/;"	m
+RG	init.vim	/^command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)$/;"	c
+RipgrepFzf	init.vim	/^function! RipgrepFzf(query, fullscreen)$/;"	f
+[g	init.vim	/^nmap <silent> [g <Plug>(coc-diagnostic-prev)$/;"	m
+]g	init.vim	/^nmap <silent> ]g <Plug>(coc-diagnostic-next)$/;"	m
+fmt	ftplugin/java.vim	/^augroup fmt$/;"	a
+fmt	ftplugin/xml.vim	/^augroup fmt$/;"	a
+g:LanguageClient_serverCommands	init.vim	/^let g:LanguageClient_serverCommands = {$/;"	v
+g:UltiSnipsEditSplit	init.vim	/^let g:UltiSnipsEditSplit="vertical"$/;"	v
+g:UltiSnipsExpandTrigger	init.vim	/^let g:UltiSnipsExpandTrigger="<tab>"$/;"	v
+g:UltiSnipsJumpBackwardTrigger	init.vim	/^let g:UltiSnipsJumpBackwardTrigger="<c-z>"$/;"	v
+g:UltiSnipsJumpForwardTrigger	init.vim	/^let g:UltiSnipsJumpForwardTrigger="<c-b>"$/;"	v
+g:neoformat_basic_format_align	init.vim	/^let g:neoformat_basic_format_align = 1$/;"	v
+g:neoformat_basic_format_retab	init.vim	/^let g:neoformat_basic_format_retab = 1$/;"	v
+g:neoformat_basic_format_trim	init.vim	/^let g:neoformat_basic_format_trim = 1$/;"	v
+g:neoformat_enabled_java	ftplugin/java.vim	/^let g:neoformat_enabled_java = ['prettier']$/;"	v
+g:neoformat_java_prettier	ftplugin/java.vim	/^let g:neoformat_java_prettier = {$/;"	v
+g:neoformat_only_msg_on_error	init.vim	/^let g:neoformat_only_msg_on_error = 1$/;"	v
+g:neoformat_xml_prettier	ftplugin/xml.vim	/^let g:neoformat_xml_prettier = {$/;"	v
+g:projectionist_heuristics	ftplugin/java.vim	/^let g:projectionist_heuristics = {$/;"	v
+g:vimwiki_ext2syntax	init.vim	/^let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}$/;"	v
+g:vimwiki_list	init.vim	/^let g:vimwiki_list = [$/;"	v
+g:zettel_fzf_command	init.vim	/^let g:zettel_fzf_command = "rg --files"$/;"	v
+gd	init.vim	/^nmap <silent> gd <Plug>(coc-definition)$/;"	m
+gi	init.vim	/^nmap <silent> gi <Plug>(coc-implementation)$/;"	m
+gr	init.vim	/^nmap <silent> gr <Plug>(coc-references)$/;"	m
+gy	init.vim	/^nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
+java.home	coc-settings.json	/^    "java.home": "\/usr\/lib\/jvm\/default",$/;"	s
+mapleader	init.vim	/^let mapleader=" "$/;"	v
+s:show_documentation	init.vim	/^function! s:show_documentation()$/;"	f
