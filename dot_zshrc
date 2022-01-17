@@ -1,0 +1,67 @@
+export ZSH="/Users/booterror/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+
+# CASE_SENSITIVE="true"
+HYPHEN_INSENSITIVE="true"
+# DISABLE_AUTO_UPDATE="true"
+DISABLE_UPDATE_PROMPT="true"
+# export UPDATE_ZSH_DAYS=13
+# DISABLE_MAGIC_FUNCTIONS="true"
+# DISABLE_LS_COLORS="true"
+# DISABLE_AUTO_TITLE="true"
+ENABLE_CORRECTION="true"
+# COMPLETION_WAITING_DOTS="true"
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+# HIST_STAMPS="mm/dd/yyyy"
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+plugins=(
+  git 
+  fzf
+  macos
+)
+source $ZSH/oh-my-zsh.sh
+
+# Environment Variables
+export LANG=en_US.UTF-8
+export EDITOR=nvim
+export TERMINAL=alacritty
+
+export DEVEL=$HOME/Development
+export CONTRDEV=$DEVEL/Contributing
+export PERSNDEV=$DEVEL/Personal
+export EXPRNDEV=$DEVEL/Experiments
+
+export PATH=$PATH:$HOME/.local/bin/
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export PATH=$PATH:$HOME/Library/Python/3.9/bin
+
+export PROJECT_HOME=$DEVEL
+# export ARCHFLAGS="-arch x86_64"
+
+# export MANPATH="/usr/local/man:$MANPATH"
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line
+
+# Aliases
+alias vim="nvim"
+alias e="vim"
+alias v="vim"
+alias g="git"
+
+alias ls="ls --color=auto"
+alias ll="exa -lh"
+alias la="exa -lah"
+alias lt="exa -Tl"
+
+alias grep="grep --color=auto"
+
+alias cp="cp -rvf"
+alias mv="mv -v"
+alias rm="rm -v"
+alias mkdir="mkdir -pv"
+
+alias lg="lazygit"

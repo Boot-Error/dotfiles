@@ -1,0 +1,40 @@
+[user]
+	name = Boot-Error
+	email = booterror99@gmail.com
+
+[alias]
+  cl = clone
+  st = status -sb
+  lo = log --oneline
+  unstage = reset HEAD --
+  all = add . --all
+  out = log --branches --not --remotes
+  in = pull --dry-run
+  cm = commit
+  g = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+
+[delta]
+    ; plus-style = "syntax #012800"
+    ; minus-style = "syntax #340001"
+    syntax-theme = GitHub
+    navigate = true
+
+[interactive]
+    diffFilter = delta --color-only
+
+[merge]
+    log = true
+    ff = false
+
